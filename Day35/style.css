@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-top: 20px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 350px;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    font-family: "Segoe UI";
+    text-decoration: none;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 350;
+}
+
+.first {
+    font-family: serif;
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px
+}
+
+.first span {
+    font-family: serif;
+    font-size: 40px;
+}
+
+section span img {
+    width: 82px;
+    margin: 0 23px;
+}
+
+.first p{
+    font-size: 23px;
+    width: 44vw;
+    text-align: center;
+}
+
+.first div button{
+    background-color: #00b6d1;
+    padding: 14px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.flex{
+    display: inline;
+    text-align: start;
+    margin-left: -570px;
+    margin-bottom: 25px;
+    font-size: x-large;
+}
+.small{
+    font-size: 13px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.btn-blue{
+    background-color: #00b6d1;
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-green{
+    background-color: rgb(22, 172, 22);
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.item{
+    padding: 20px;
+    background-color: #f8f6f6;
+    border-radius: 2px;
+    font-family: serif;
+}
+.item-lang{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1079px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // this is a complecated this is callback hell and pramid of duumb
+        const fn = ()=>{
+    console.log("nothind")
+}
+
+
+const loadScript =(src,callback)=>{
+    let sc = document.createElement("script");
+
+    sc.src =src;
+
+    sc.onload = callback("pavan is very good boy and i have meet and i also know he is great presonalty ");
+    document.head.append(src)
+
+}
+
+loadScript("",(arg,fn)=>{
+    console.log(arg)
+    fn("firstarg",()=>
+    {
+      ddg("secondarg",()=>
+      {
+        console.log("jskfjs")
+      })  
+    })
+})
+
+    </script>
+</body>
+</html>

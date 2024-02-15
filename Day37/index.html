@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animation</title>
+    <style>
+        .container{
+            background-color:blueviolet;
+            width: 80vw;
+            height: 50vh;
+        }
+        .box{
+            width: 35px;
+            height: 45px;
+            background-color: yellow;
+            /* animation: pavansanimation 3s ease-in-out 1s infinite; */
+            animation-name:  pavan2 pavansanimation;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            animation-delay: 1ms;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-fill-mode: both;
+            animation-direction: reverse;
+        }
+
+        @keyframes pavansanimation {
+            form{
+            background-color: pink;
+        }
+        to{
+            transform: translateX(1000px);
+            background-color: green;
+        }
+    }
+
+    @keyframes pavan2{
+        0%{
+            transform: rotate(10deg);
+        }
+        10%{
+            transform: rotate(50deg);
+        }
+        50%{
+            transform: scale(33deg);
+        }
+        100%{
+            transform: rotateX(100deg);
+        }
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
