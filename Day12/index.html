@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS selector</title>
+    <style>
+        /*Element selector*/
+        /* div{
+            background-color: red;
+        } */
+        /* <!--class selector--> */
+        .red{
+            background-color: red;
+        }
+        /* <!--id selector--> */
+        #green{
+            background-color: green;
+        }
+        /* <!--child selector--> */
+        div>p{
+            color: blue;
+        }
+        /* <!--child selector decendeant--> */
+        div p{
+            color: blue;
+            background-color: yellow;
+        }
+        /* <!--universal selector--> */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color:red;
+        }
+        a:hover{
+            background-color: yellow;
+            color: red;
+        }
+        p:first-child{
+            color: aqua;
+        }
+        
+    </style>
+    <!--Id selector (.)-->
+    <!--class selector(#) -->
+    <!--child selector direct chile then apply if desendant use space -->
+</head>
+<body>
+    <main class="one">
+        <p> i am first</p>
+        <p>i am second </p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+        <p>i am a para inside</p>
+        </article>
+    </div>
+    <div id="green">
+        I am another div
+    </div>
+    <div>
+        <a href="https//www.google.com">Go to google</a>
+        <a href="https//www.facebook.com">Go to facebook</a>
+    </div>
+</body>
+</html>

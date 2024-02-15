@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        :root{
+            --color: red;
+            --background-color: rgb(23, 128, 25);
+            --seccolor: yellow;
+            --color2: purple;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            margin: 10px;
+            padding: 5px;
+            gap: 22px
+            
+        }
+        ul li{
+            list-style: none;
+            background-color: var(--background-color);
+            
+        }
+        ul li:first-child{
+            background-color: var(--seccolor);
+        }
+        ul li:nth-child(2){
+            background-color: var(--color);
+        }
+        ul li:last-child{
+            background-color: var(--color2);
+        }
+    </style>
+</head>
+<body>
+    <!-- malticlor nav bar -->
+    <!-- make a style sheet and make global variable css variable use-->
+<div class="navbar">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Review</li>
+        </ul>
+    </nav>
+
+</div>
+</body>
+</html>
